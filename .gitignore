@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -56,3 +57,11 @@ htmlcov/
 .idea/
 *.swp
 *.swo
+=======
+node_modules/
+.env
+dist/
+__pycache__/
+*.pyc
+.venv/
+>>>>>>> e25d355f5348bd11544a9df9b7cc3acbcb869956

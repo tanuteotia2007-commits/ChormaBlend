@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Invisible Help — Backend ("Chroma Blend")
 
 Privacy-first women's safety web prototype disguised as a normal productivity website.
@@ -90,3 +91,6 @@ git remote add origin <YOUR_GITHUB_REPO_URL>
 git push -u origin main
 ```
 *(Note: `.env` and `invisible_help.db` are ignored by `.gitignore` so secrets are never pushed).*
+=======
+# ChormaBlend
+>>>>>>> e25d355f5348bd11544a9df9b7cc3acbcb869956
