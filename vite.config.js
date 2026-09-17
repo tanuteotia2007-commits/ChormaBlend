@@ -1,0 +1,19 @@
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+// Dev-time proxy: the frontend talks to "/api/*" and Vite forwards it to
+// the Flask backend. This keeps the app same-origin in development so the
+// Flask session cookie (used for the hidden Safety Dashboard) is sent
+// automatically without extra CORS configuration.
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    port: 5173,
+    proxy: {
+      '/api': {
+        target: process.env.VITE_API_BASE_URL || 'http://localhost:5000',
+        changeOrigin: true,
+      },
+    },
+  },
+});
